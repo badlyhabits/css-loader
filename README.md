@@ -1,4 +1,7 @@
-css-loader
+css simple loader using keyframes
 ==========
 
-css simple loader
+# browser support:
+* chrome
+* firefox
+* ie10
