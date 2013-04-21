@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+  .loader {
+    font-size: 2em;
+    position: relative;
+    width: 21em;
+    height: 1em;
+    margin: 4em auto;
+    border-radius: .1em;
+    background: rgba(255, 255, 255, .6);
+    box-shadow: 0 0 .1em rgba(0, 0, 0, .3) inset, 0 0 0 .1em rgba(255,255,255,0.7) inset }
+
+  .loader-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3em;
+    height: 100%;
+    border-radius: .1em;
+    background: linear-gradient(#eee, #ddd);
+    box-shadow: 0 0 .1em rgba(0, 0, 0, .1), 0 0 .1em rgba(0, 0, 0, .25) inset;
+
+    -webkit-animation: move-loader-indicator 2s ease-in-out infinite alternate;
+    animation: move-loader-indicator 2s ease-in-out infinite alternate;
+  }
+
+  @-webkit-keyframes move-loader-indicator {
+    to { -webkit-transform: translateX(18em); }
+  }
+
+  @keyframes move-loader-indicator {
+    to { transform: translateX(18em); }
+  }
+  </style>
+
+</head>
+<body>
+
+  <div class="loader">
+    <div class="loader-indicator"></div>
+  </div>
+
+</body>
+</html>
